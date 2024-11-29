@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #344C64;
+  line-height: 1.6;
+}
+
+.accordion-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 600;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+.accordion-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.accordion-item {
+  width: 90dvw;
+  margin: 0 auto;
+  align-item: center;
+  background-color: #fff;
+  margin-bottom: 15px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+}
+
+.accordion-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.accordion-question {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #444;
+  letter-spacing: 0.5px;
+}
+
+.accordion-toggle {
+  background-color: orange;
+  color: #fff;
+  border: none;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.accordion-toggle:hover {
+  background-color: green;
+  transform: scale(1.05);
+}
+
+.accordion-answer {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  color: purple;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: max-height 0.3s ease-in-out;
+  max-height: 10;
+}
+
+.accordion-item.active .accordion-answer {
+  max-height: 800px;
+  padding-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .accordion-title {
+    font-size: 2rem;
+  }
+
+  .accordion-item {
+    padding: 15px;
+  }
+
+  .accordion-question {
+    font-size: 1.2rem;
+  }
+
+  .accordion-toggle {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}

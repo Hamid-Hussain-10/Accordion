@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "question": "What is React?",
+      "answer": "React is a JavaScript library for building user interfaces, developed and maintained by Facebook. It allows developers to create reusable UI components and manage application state efficiently."
+    },
+    {
+      "id": 2,
+      "question": "What are components in React?",
+      "answer": "Components are the building blocks of a React application. They are reusable, independent pieces of UI that can manage their own state and logic."
+    },
+    {
+      "id": 3,
+      "question": "What is the virtual DOM?",
+      "answer": "The virtual DOM is a lightweight copy of the actual DOM. React uses it to optimize updates by comparing the new virtual DOM with the previous one and applying changes to the actual DOM only where necessary."
+    },
+    {
+      "id": 4,
+      "question": "What is JSX?",
+      "answer": "JSX stands for JavaScript XML. It is a syntax extension for JavaScript that allows you to write HTML elements and components in your React code, making it easier to create and visualize UI structure."
+    },
+    {
+      "id": 5,
+      "question": "What is state in React?",
+      "answer": "State is an object in React that holds data or information about a component. It can change over time and is used to manage the dynamic behavior of components."
+    },
+    {
+      "id": 6,
+      "question": "What are props in React?",
+      "answer": "Props (short for properties) are read-only attributes passed from a parent component to a child component. They allow data to be shared between components."
+    },
+    {
+      "id": 7,
+      "question": "What is the difference between state and props?",
+      "answer": "State is used to manage data within a component, while props are used to pass data between components. State is mutable, while props are immutable."
+    },
+    {
+      "id": 8,
+      "question": "What is useState in React?",
+      "answer": "useState is a React Hook that allows you to add state to a functional component. It returns an array with the current state value and a function to update it."
+    },
+    {
+      "id": 9,
+      "question": "What is a React Hook?",
+      "answer": "Hooks are functions that let you use React features, such as state and lifecycle methods, in functional components. Examples include useState, useEffect, and useContext."
+    },
+    {
+      "id": 10,
+      "question": "What is useEffect in React?",
+      "answer": "useEffect is a React Hook used to perform side effects in functional components, such as fetching data, subscribing to events, or updating the DOM. It runs after the render phase."
+    }
+  ]
+  
